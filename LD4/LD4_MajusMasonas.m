@@ -8,8 +8,8 @@ z = 1 - 2*x.^2 - 3*y.^2;
 figure(1)
 
 surf(x,y,z)
+colormap([0 0.4470 0.7410])
 shading interp
-colormap parula
 
 xlabel('x')
 ylabel('y')
@@ -28,8 +28,8 @@ z = sin(abs(x+y)/20) .* exp(-abs(x+y));
 figure(2)
 
 surf(x,y,z)
+colormap([0.8500 0.3250 0.0980])
 shading interp
-colormap jet
 
 xlabel('x')
 ylabel('y')
@@ -55,6 +55,7 @@ subplot(1,3,1)
 surf(x,y,z)
 shading interp
 camlight
+lighting gouraud
 
 xlabel('x')
 ylabel('y')
